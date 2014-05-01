@@ -2,7 +2,7 @@
 
 Alice is front-end application for web and mobile using Zend Framework 2.
 
-## SYSTEM REQUIREMENTS
+### SYSTEM REQUIREMENTS
 
 Alice requires PHP 5.5.0 or later; we recommend using the latest PHP version whenever possible.
 
