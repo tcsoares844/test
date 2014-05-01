@@ -8,7 +8,23 @@ Alice requires PHP 5.5.0 or later; we recommend using the latest PHP version whe
 
 ### INSTALLATION
 
-[Composer](https://getcomposer.org/ "Composer: Dependency Manager for PHP") is the package manager used by modern PHP applications and the only recommended way to install Alice. To install Composer on your Linux or Mac system, execute the following commands:
+Clone Alice repository into your work directory with SSH or without SSH:
+
+Using SSH method:
+
+```shell
+$ git clone git@github.com:FreakPayment/alice.git 
+```
+
+Using HTTP method:
+
+```shell
+$ git clone https://github.com/FreakPayment/alice.git
+```
+After cloning repository into your work directory you need run composer to install dependencies of project with [Composer](https://getcomposer.org/ "Composer: Dependency Manager for PHP")
+
+
+Composer is the package manager used by modern PHP applications and the only recommended way to install Alice. To install Composer on your Linux or Mac system, execute the following commands:
 
 ```shell
 $ curl -sS https://getcomposer.org/installer | php
@@ -29,7 +45,6 @@ $ php -S 127.0.0.1:8888 -t public public/index.php
 For run Alice with apache you need to create a Virtual Host into Apache configuration. Copy and paste the following lines:
 
 ```shell
-#Virtual Host for Alice:
 <VirtualHost *:80>
     ServerName alice.dev
     DocumentRoot /path/to/install/alice/public/
