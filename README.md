@@ -1,7 +1,5 @@
 # Alice
 
-- - -
-
 ## SYSTEM REQUIREMENTS
 
 Alice requires PHP 5.5.0 or later; we recommend using the latest PHP version whenever possible.
