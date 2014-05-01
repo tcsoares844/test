@@ -81,4 +81,4 @@ For run Alice with apache you need to create a Virtual Host into Apache configur
 
 ### LICENSE
 
-The files in this archive are released under The MIT License (MIT). You can find a copy of this license in [LICENSE.txt](https://getcomposer.org/).
+The files in this archive are released under The MIT License (MIT). You can find a copy of this license in [LICENSE.txt](https://github.com/freakpayment/alice/blob/master/README.md).
