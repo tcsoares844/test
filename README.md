@@ -11,7 +11,7 @@ Alice requires PHP 5.5.0 or later; we recommend using the latest PHP version whe
 Clone Alice repository into your work directory with HTTP or SSH method:
 
 ```shell
-$ cd path/to/install
+$ cd path/to/work-directory
 ```
 
 Using HTTP method:
@@ -37,7 +37,7 @@ You have two ways to run your project. Run built in PHP server or run the applic
 If your choos is run built in server, execute the following commands:
 
 ```shell
-$ cd path/to/install/alice
+$ cd path/to/work-directory/alice
 ```
 
 ```shell
@@ -49,11 +49,11 @@ For run Alice with apache you need to create a Virtual Host into Apache configur
 ```shell
 <VirtualHost *:80>
     ServerName alice.dev
-    DocumentRoot /path/to/install/alice/public/
+    DocumentRoot /path/to/work-directory/alice/public/
 
     SetEnv APPLICATION_ENV "development"
 
-    <Directory /path/to/install/alice/public/>
+    <Directory /path/to/work-directory/alice/public/>
         DirectoryIndex index.php
         AllowOverride All
         Order allow,deny
