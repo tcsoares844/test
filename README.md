@@ -25,7 +25,7 @@ Using SSH method:
 $ git clone git@github.com:FreakPayment/alice.git
 ```
 
-After cloning repository into your work directory you need run composer to install dependencies of project with [Composer](https://getcomposer.org/ "Composer: Dependency Manager for PHP")
+After cloning repository into your work directory you need to install dependencies of project with [Composer](https://getcomposer.org/ "Composer: Dependency Manager for PHP")
 
 Composer is the package manager used by modern PHP applications and the only recommended way to install Alice. To install Composer on your Linux or Mac system, execute the following commands:
 
