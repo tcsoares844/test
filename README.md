@@ -25,8 +25,7 @@ Using SSH method:
 $ git clone git@github.com:FreakPayment/alice.git
 ```
 
-After cloning repository into your work directory you need to install dependencies of project with [Composer](https://getcomposer.org/ "Composer: Dependency Manager for PHP").
-Composer is the package manager used by modern PHP applications and the only recommended way to install Alice. 
+After cloning repository into your work directory you need to install dependencies of project with [Composer](https://getcomposer.org/ "Composer: Dependency Manager for PHP") the package manager used by modern PHP applications and the only recommended way to install Alice.
 
 To update composer itself to the latest version, just run the `self-update` command. It will replace your `composer.phar` with the latest version.
 
@@ -82,4 +81,4 @@ For run Alice with apache you need to create a Virtual Host into Apache configur
 
 ### LICENSE
 
-The files in this archive are released under The MIT License (MIT). You can find a copy of this license in LICENSE.txt.
+The files in this archive are released under The MIT License (MIT). You can find a copy of this license in [LICENSE.txt](https://getcomposer.org/).
