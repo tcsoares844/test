@@ -26,10 +26,25 @@ $ git clone git@github.com:FreakPayment/alice.git
 ```
 
 After cloning repository into your work directory you need to install dependencies of project with [Composer](https://getcomposer.org/ "Composer: Dependency Manager for PHP").
-Composer is the package manager used by modern PHP applications and the only recommended way to install Alice. To install Composer on your Linux or Mac system, execute the following commands:
+Composer is the package manager used by modern PHP applications and the only recommended way to install Alice. 
+
+To update composer itself to the latest version, just run the `self-update` command. It will replace your `composer.phar` with the latest version.
 
 ```shell
-$ curl -sS https://getcomposer.org/installer | php
+$ php composer.phar self-update
+```
+
+To install dependencies of your ptoject just run the `insttall`. The `install` command reads the `composer.json` file from the current directory, resolves the dependencies, and installs them into `vendor`.
+
+```shell
+$ php composer.phar install
+```
+
+If there is a `composer.lock` file in the current directory, it will use the exact versions from there instead of resolving them. This ensures that everyone using the library will get the same versions of the dependencies.
+In order to get the latest versions of the dependencies and to update the `composer.lock` file, you should use the `update` command.
+
+```shell
+$ php composer.phar update
 ```
 
 You have two ways to run your project. Run built in PHP server or run the application with [Apache](http://www.apache.org/ "The Apache Software Foundation").
