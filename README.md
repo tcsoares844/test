@@ -46,7 +46,7 @@ In order to get the latest versions of the dependencies and to update the `compo
 $ php composer.phar update
 ```
 
-You have two ways to run your project. Run PHP [built-in](http://www.php.net/manual/en/features.commandline.webserver.php) web server or run the application with [Apache](http://www.apache.org/ "The Apache Software Foundation").
+You have two ways to run your project. Run [built-in](http://www.php.net/manual/en/features.commandline.webserver.php) web server or run the application with [Apache](http://www.apache.org/ "The Apache Software Foundation").
 
 If your choos is run built in server, execute the following commands:
 
