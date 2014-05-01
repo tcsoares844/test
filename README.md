@@ -10,6 +10,10 @@ Alice requires PHP 5.5.0 or later; we recommend using the latest PHP version whe
 
 Clone Alice repository into your work directory with SSH or without SSH:
 
+```shell
+$ cd path/to/install
+```
+
 Using HTTP method:
 
 ```shell
@@ -34,7 +38,7 @@ You have two ways to run your project. Run built in PHP server or run the applic
 If your choos is run built in server, execute the following commands:
 
 ```shell
-$ cd path/to/install
+$ cd path/to/install/alice
 ```
 
 ```shell
