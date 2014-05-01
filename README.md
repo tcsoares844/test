@@ -14,7 +14,7 @@ Alice requires PHP 5.5.0 or later; we recommend using the latest PHP version whe
 $ curl -sS https://getcomposer.org/installer | php
 ```
 
-After, you've two ways to run your project. Run built in php server or run the application with Apache.
+You have two ways to run your project. Run built in PHP server or run the application with [Apache](http://www.apache.org/ "The Apache Software Foundation").
 
 If your choos is run built in server, execute the following commands:
 
@@ -24,6 +24,28 @@ $ cd path/to/install
 
 ```shell
 $ php -S 127.0.0.1:8888 -t public public/index.php
+```
+
+For run Alice with apache you need to create a Virtual Host into Apache configuration. Copy and paste the following lines:
+
+```shell
+#Virtual Host for Alice:
+<VirtualHost *:80>
+    ServerName alice.dev
+    DocumentRoot /var/www/alice/public/
+
+    SetEnv APPLICATION_ENV "development"
+
+    <Directory /var/www/alice/public/>
+        DirectoryIndex index.php
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+
+    ErrorLog /var/log/apache2/alice_error.log
+    CustomLog /var/log/apache2/alice.log combined
+</VirtualHost>
 ```
 
 ### LICENSE
