@@ -54,7 +54,7 @@ For run built-in web server, execute the following command:
 $ php -S 127.0.0.1:8888 -t public public/index.php
 ```
 
-For run with apache you need to create a Virtual Host into Apache configuration. Copy and paste the following lines:
+For run with apache you need to create a Virtual Host into Apache configuration. Copy and paste the following lines into your virtual host file:
 
 ```shell
 <VirtualHost *:80>
