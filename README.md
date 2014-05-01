@@ -48,17 +48,13 @@ $ php composer.phar update
 
 You have two ways to run your project. Run [built-in](http://www.php.net/manual/en/features.commandline.webserver.php) web server or run the application with [Apache](http://www.apache.org/ "The Apache Software Foundation").
 
-If your choos is run built in server, execute the following commands:
-
-```shell
-$ cd path/to/work-directory/alice
-```
+For run built-in web server, execute the following command:
 
 ```shell
 $ php -S 127.0.0.1:8888 -t public public/index.php
 ```
 
-For run Alice with apache you need to create a Virtual Host into Apache configuration. Copy and paste the following lines:
+For run with apache you need to create a Virtual Host into Apache configuration. Copy and paste the following lines:
 
 ```shell
 <VirtualHost *:80>
