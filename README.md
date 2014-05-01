@@ -32,11 +32,11 @@ For run Alice with apache you need to create a Virtual Host into Apache configur
 #Virtual Host for Alice:
 <VirtualHost *:80>
     ServerName alice.dev
-    DocumentRoot /var/www/alice/public/
+    DocumentRoot /path/to/install/alice/public/
 
     SetEnv APPLICATION_ENV "development"
 
-    <Directory /var/www/alice/public/>
+    <Directory /path/to/install/alice/public/>
         DirectoryIndex index.php
         AllowOverride All
         Order allow,deny
