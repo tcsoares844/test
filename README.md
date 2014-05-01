@@ -8,7 +8,7 @@ Alice requires PHP 5.5.0 or later; we recommend using the latest PHP version whe
 
 ### INSTALLATION
 
-Clone Alice repository into your work directory with SSH or without SSH:
+Clone Alice repository into your work directory with HTTP or SSH method:
 
 ```shell
 $ cd path/to/install
