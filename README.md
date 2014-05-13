@@ -1,6 +1,6 @@
 # Alice
 
-Alice is front-end application for web and mobile using Zend Framework 2.
+Alice is the front-end application for web and mobile using Symfony 2.
 
 ### SYSTEM REQUIREMENTS
 
@@ -17,12 +17,12 @@ $ cd path/to/work-directory
 Using HTTP method:
 
 ```shell
-$ git clone https://github.com/FreakPayment/alice.git
+https://github.com/FreakPay/alice.git
 ```
 Using SSH method:
 
 ```shell
-$ git clone git@github.com:FreakPayment/alice.git
+$ git clone git@github.com:FreakPay/alice.git
 ```
 
 After cloning repository into your work directory you need to install dependencies of project with [Composer](https://getcomposer.org/ "Composer: Dependency Manager for PHP") the package manager used by modern PHP applications and the only recommended way to install Alice.
