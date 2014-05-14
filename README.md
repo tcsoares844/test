@@ -51,23 +51,21 @@ You have two ways to run your project. Run [built-in](http://www.php.net/manual/
 For run built-in web server, execute the following command:
 
 ```shell
-$ php -S 127.0.0.1:8888 -t public public/index.php
+$ php app/console server:run
 ```
 
 For run with apache you need to create a Virtual Host into Apache configuration. Copy and paste the following lines into your virtual host file:
 
 ```shell
 <VirtualHost *:80>
-    ServerName alice.dev
-    DocumentRoot /path/to/work-directory/alice/public/
+    ServerName alice.localhost
+    ServerAlias www.alice.localhost
+    DocumentRoot /var/www/alice/web/
 
-    SetEnv APPLICATION_ENV "development"
-
-    <Directory /path/to/work-directory/alice/public/>
-        DirectoryIndex index.php
+    <Directory /var/www/alice/web/>
         AllowOverride All
         Order allow,deny
-        Allow from all
+        Allow from All
     </Directory>
 
     ErrorLog /var/log/apache2/alice_error.log
@@ -77,4 +75,4 @@ For run with apache you need to create a Virtual Host into Apache configuration.
 
 ### LICENSE
 
-The files in this archive are released under The MIT License (MIT). You can find a copy of this license in [LICENSE.txt](https://github.com/freakpayment/alice/blob/master/README.md).
+The files in this archive are released under The MIT License (MIT). You can find a copy of this license in LICENSE.txt.
