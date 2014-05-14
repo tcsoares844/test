@@ -72,6 +72,13 @@ For run with apache you need to create a Virtual Host into Apache configuration.
     CustomLog /var/log/apache2/alice.log combined
 </VirtualHost>
 ```
+You need to set the permissions:
+```shell
+$ sudo setfacl  -Rm u:www:rwx app/cache app/logs
+$ sudo setfacl -dRm u:www:rwx app/cache app/logs
+$ sudo setfacl  -Rm u:`whoami`:rwx .
+$ sudo setfacl -dRm u:`whoami`:rwx .
+```
 
 ### LICENSE
 
